@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Product List</title>
+</head>
+<body>
+<h1>Product List</h1>
+
+<!-- Check if the products list is not empty -->
+<div th:if="${#lists.isEmpty(products)}">
+    <p>No products available</p>
+</div>
+
+<!-- If products are available, display them in a list -->
+<ul th:if="${#lists.isNotEmpty(products)}">
+    <span th:text="${products}">
+
+    </span>
+</ul>
+</body>
+</html>
