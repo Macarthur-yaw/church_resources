@@ -21,12 +21,7 @@ public class Usercontroller {
     }
 
     List<String> Welcome=List.of("welcome","hello");
-    @GetMapping("/get-products")
 
-    public String  getProducts(Model welcome){
-        welcome.addAttribute("products",Welcome);
-        return "menu";
-    }
 
 
 }
